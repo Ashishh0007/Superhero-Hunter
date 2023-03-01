@@ -1,0 +1,101 @@
+/* navbar heading */
+#head {
+    font-size: 25px;
+    font-size: max(10px, 1.6vw);
+    font-family: cursive;
+    font-weight: 700;
+    transition:0.5s all ease-in-out ;
+}
+
+/* list of superheros */
+#fav-superhero{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+
+/* childSuperHero - child node of super hero elements */
+.childSuperHero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 3px dashed white;
+
+}
+
+
+/* childSuperHero image decoration */
+.childSuperHero img{
+    width: 13rem;
+    height: 13rem;
+    border-radius: 10px;
+    transition: 0.5s all ease-in-out;
+    margin: 27px 0;
+}
+
+.childSuperHero img:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 5px whitesmoke;
+    border-radius: 50%;
+    transform: scale(1.2);
+}
+
+
+/* childSuperHero content decoration */
+.childSuperHero div{
+    border:5px double black;
+    background-color: whitesmoke;
+    color: black;
+    height: 150px;
+    width: 400px;
+    border-radius: 50%;
+    padding: 35px;
+    transition: 0.5s all ease-in-out;
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(0, 168, 173);
+}
+
+.childSuperHero div:hover{
+    box-shadow: 0px 0px 5px 5px whitesmoke;
+    color: white;
+    background-color: black;
+    border-color: whitesmoke;
+}
+
+
+/* childSuperHero remove button decoration */
+.childSuperHero button{
+    width: auto;
+    font-size: 1.5rem;
+    height: 3rem;
+    font-weight: 700;
+    border-radius: 20px;
+    transition: 0.5s all ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+.childSuperHero button:hover{
+    cursor: pointer;
+    color: whitesmoke; 
+    background-color: black;
+    box-shadow: 0px 0px 5px 5px whitesmoke;
+}
