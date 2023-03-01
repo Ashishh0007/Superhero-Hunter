@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Hero</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+
+    <link rel="stylesheet" href="../css/hero.css">
+    <link rel="icon" href="../assets/images/icon1.png">
+
+</head>
+<body>
+    
+    <main>
+
+        <!-- nav bar start -->
+		<div id="container-fluid">
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar-color">
+
+                <div class="container-fluid">
+
+                    <a class="navbar-brand" href="#">
+                        <img src="../assets/images/logo3.png" alt="Bootstrap" width="87" height="53">
+                    </a>   
+
+                </div>
+
+            </nav>
+
+        </div>
+		<!-- nav bar end -->
+
+
+        <!-- div for superhero's image and details -->
+        <div class="container-fluid bg-dark-subtle" id="heropage-bg">
+
+            <!-- image and name section -->
+            <section>
+				<div class="row mx-auto animate__animated animate__zoomIn animate__delay-1s">
+					<div class="my-2">
+						<div class="flip-box">
+							<div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img src="" alt=""  id="imageSuper" class="img-thumbnail">
+                                </div>
+                                <div class="flip-box-back" id="personalDetail" class="font-monospace" >
+                                </div>
+							</div>
+						  </div>
+						</div>
+					</div>
+			</section>
+
+            <!-- biography and power section -->
+            <article>
+				<div class="row row-cols-1 row-cols-md-2 g-4 text-light text-center">
+					<div class="col" >
+                        <div class="card bg-dark">
+                            <div class="card-body font-monospace" >
+                                <h2 class="card-title">Biography</h2>
+                                <p class="card-text bg-dark py-1 m-1 animate__animated animate__zoomIn animate__delay-1s "  id="biography">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body font-monospace">
+                                <h2 class="card-title">Powerstar</h2>
+                                <p class="card-text bg-dark py-1 m-1 animate__animated animate__zoomIn animate__delay-1s" id="powerstats">
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</article>
+
+        </div>
+
+    </main>
+
+    <!-- necessary script files added -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    <script src="../javascript/hero.js"></script>
+
+</body>
+</html>
