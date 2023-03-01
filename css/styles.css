@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* navbar color */
+#navbar-color {
+    background-color: white !important;
+}
+
+
+/* favourite superheros button animation */
+@keyframes infitransition {
+    from {
+        text-shadow: 0px 0px 10px 20px rgb(98, 207, 237);
+        color: rgb(55, 55, 159)
+    }
+  }
+
+
+h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(0, 168, 173);
+    transition: 0.2s all ease-in-out;
+    animation-name: infitransition;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+h3:hover {
+    transform: scale(1.1);
+    text-shadow: 0px 0px 10px 20px rgb(98, 207, 237);
+    color: rgb(55, 55, 159);
+}
+
+
+/* searchbar and music icon position adjustment */
+#search-music-align {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* searchbar adjustment and ecoration */
+.form-control {
+    width: 21.3vw; 
+    min-width: 250px;
+    border-radius: 20px;
+    border: 1.6px solid rgb(55, 55, 159);
+    background-color: white;
+}
+
+
+/* music icon adjustment and decoration */
+#audioButton:hover {
+    transform: scale(1.15);
+}
+
+
+/* style on superhero image */
+#superhero {
+    background-image: url("../assets/images/waldemar-brandt-eIOPDU3Fkwk-unsplash.jpg");
+    background-size: cover;
+    box-sizing: border-box;
+    width: 100%;
+    height: 89vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* superhero list items decoration */
+.add-listClass::-webkit-scrollbar {
+    display: none;
+}
+
+.add-listClass {
+    overflow: scroll;
+    display: inline-block;
+    width: 40%;
+    max-width: 500px;
+    min-width: 300px;
+    height: 74vh;
+    box-sizing: border-box;
+    margin: 50px 0;
+    background-color: rgba(240, 248, 255, 0.8);
+    opacity: 1;
+    list-style: none;
+    text-align: center;
+    overflow-x: hidden;
+    border-radius: 20px;
+    transition: 0.3s all ease-in-out;
+}
+
+
+.add-listClass li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 35%;
+    border-bottom: 2px dashed black;
+}
+
+
+.add-listClass li:hover {
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+/* superheros list items heading */
+.add-listClass li h1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50px;
+    transition: 0.5s all ease-in-out;
+    font-size: min(4.5vw,30px);
+}
+
+
+.add-listClass li h1:hover {
+    text-shadow: 0px 0px 0px 10px whitesmoke;
+    transform: scale(1.3);
+}
+
+
+/* superheros list items image */
+.add-listClass li img {
+    width: 7.9vw;
+    height: 7.9vw;
+    min-width: 110px;
+    min-height: 110px;
+    transition: 0.5s all ease-in-out;
+}
+
+
+.add-listClass li img:hover {
+    transform: scale(1.3);
+    box-shadow: 0px 0px 5px 5px whitesmoke;
+}
+
+
+/* superheros list items heart-icon */
+.add-listClass li i {
+    font-size: min(5vw,28px);
+    color: darkcyan;
+    transition: 0.5s all ease-in-out;
+}
+
+
+.add-listClass li i:hover {
+    text-shadow: 0px 0px 50px whitesmoke;
+    transform: scale(1.2);
+}
+
+
+/* Superheros main page starting intro animation and adjustments */
+@keyframes texttransition {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.4, 1.4);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+
+#intro {
+    width: 60vw;
+    height: 50vh;
+    text-shadow: 0px 0px 20px white;
+    background-color: white;
+    transition: 1s all ease-in-out;
+    animation-name: texttransition;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.intro-words {
+    color: black;
+    font-size: max(2vw, 1.1rem);
+}
