@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Main Page</title>
+
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./assets/images/icon1.png">
+</head>
+<body>
+
+    <!-- main part start -->
+    <main>
+
+        <!-- nav bar start -->
+        <div id="container-fluid">
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar-color">
+
+                <div class="container-fluid">
+
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/images/logo3.png" alt="Bootstrap" width="87" height="53">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./html/favourite.html" id="link" target="_blank">
+                                    <h3>Favourite Superheros</h3>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div id="search-music-align">
+                            <input type="text" class="form-control me-2 placeholder-wave" placeholder="Hunt Your Superhero Here . ." id="superhero-name">
+
+                            <audio id="audio" src="" preload="auto" loop></audio>
+                            <button type="button" style="border: none; background: transparent;transition: 0.3s all ease-in-out;" id="audioButton">
+                                <img src="./assets/images/audiobutton6.png" alt="" style="width:37px; margin-left: 3.4vw; margin-right: 3.4vw;">
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </div>
+        <!-- nav bar end -->
+
+    </main>
+
+
+    <!-- superhero section on the search -->
+    <section>
+        <div id="superhero" class="font-monospace">
+
+            <div id="intro">
+
+                <h3 class="intro-words">"Your Superheros are waiting for you on the Searchbar.."</h3>
+                <h3 class="intro-words">"Meet them quickly!"</h3>
+                <h3 class="intro-words">"If you wanna boost your mood, Click on the Music Icon."</h3>
+                <h3 class="intro-words">"Wanna shuffle the Music? Click on the Music Icon!"</h3>
+                <br>
+                <br>
+                <h3 class="intro-words">"Have a Great Time!"</h3>
+            </div>  
+
+
+            <div id="adding-list">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- necessary script files added -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous">
+    </script>
+
+    <script src="https://kit.fontawesome.com/5147082889.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./javascript/script.js"></script>
+    <script type="text/javascript" src="./javascript/bgmusic.js"></script>
+    
+</body>
+
+</html>
