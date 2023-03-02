@@ -4,7 +4,7 @@
     // get elements id from index.html page
     var superheroname = document.getElementById("superhero-name");
     var addingContent = document.getElementById("adding-list");
-
+    var heros = [];
 
     //  function to view the superhero page by clicking superhero name or image
     function ViewHero(li) {
@@ -12,13 +12,19 @@
         let element1 = li.getElementsByTagName('h1')[0];
         element1.addEventListener('click', (e) => {
             let way1=`${window.location.pathname} + /../../html/hero.html#id=${e.target.id}`;
-            window.open(way1);
+            let a = document.createElement('a');
+            a.target = '_blank';
+            a.href = way1;
+            a.click();
         });
 
         let element2 = li.getElementsByTagName('img')[0];
         element2.addEventListener('click', (e) => {
             let way2=`${window.location.pathname} + /../../html/hero.html#id=${e.target.id}`;
-            window.open(way2);
+            let a = document.createElement('a');
+            a.target = '_blank';
+            a.href = way2;
+            a.click();
         });
     }
 
@@ -42,17 +48,18 @@
         favheart.setAttribute('id', data.id);
 
         let favCheck = fvrtHeros();
-
+        
         if(favCheck.includes(data.id)) {
             favheart.style.color = "red";
         }
 
         li.append(favheart);
 
-        favheart.addEventListener('click', (e) => {
+        favheart.addEventListener('click', function(e) {
             let id = e.target.id;
             let changeColor = e.target;
-            
+            let favCheck = fvrtHeros();
+
             if(!favCheck.includes(id)) {
                 changeColor.style.color = "red";
                 favCheck.push(id);
@@ -76,14 +83,8 @@
     // function to fetch the favourite superheros ids from the local-storage 
     function fvrtHeros() {
 
-        let heros;
-        if (localStorage.getItem('FavouriteHeros') === null) {
-            heros = [];
-            console.log("No HERO ", heros);
-        }
-        else {
+        if (localStorage.getItem('FavouriteHeros') !== null) {
             heros = JSON.parse(localStorage.getItem('FavouriteHeros'));
-            console.log("HERO",heros);
         }
 
         return heros;

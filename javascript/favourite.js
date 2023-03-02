@@ -89,6 +89,7 @@
     function extract() {
 
         let favHerosIds = favouriteHeros();
+        console.log(favHerosIds);
 
         for(let i=0; i<favHerosIds.length; i++) {
             fetch('https://www.superheroapi.com/api.php/1358348604650444/' + favHerosIds[i])
