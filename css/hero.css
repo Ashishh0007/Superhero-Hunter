@@ -94,7 +94,7 @@ h3:hover {
     display: flex;
     align-self: center;
     padding-left: 5%;
-    font-size: 18px;
+    font-size: max(1.2vw, 14px);
     text-align: justify;
     overflow: hidden;
 }
