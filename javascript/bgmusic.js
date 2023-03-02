@@ -9,11 +9,11 @@
 
   // audios urls array
   const audioUrls = [
-      "../assets/music/Apparition.mp3",
-      "../assets/music/Avengers.mp3",
-      "../assets/music/suicideSquad.mp3",
-      "../assets/music/THE-BATMAN-Theme.mp3",
-      "../assets/music/You-Have-Failed-This-City.mp3"
+      "./assets/music/Apparition.mp3",
+      "./assets/music/Avengers.mp3",
+      "./assets/music/suicideSquad.mp3",
+      "./assets/music/THE-BATMAN-Theme.mp3",
+      "./assets/music/You-Have-Failed-This-City.mp3"
   ];
 
 
