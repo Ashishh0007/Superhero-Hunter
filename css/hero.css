@@ -96,6 +96,7 @@ h3:hover {
     padding-left: 5%;
     font-size: 18px;
     text-align: justify;
+    overflow: hidden;
 }
 
 
