@@ -11,7 +11,7 @@
 
         let element1 = li.getElementsByTagName('h1')[0];
         element1.addEventListener('click', (e) => {
-            let way1=`${window.location.pathname} + /../../html/hero.html#id=${e.target.id}`;
+            let way1=`${window.location.pathname} + /../../Superhero-Hunter/html/hero.html#id=${e.target.id}`;
             let a = document.createElement('a');
             a.target = '_blank';
             a.href = way1;
@@ -20,7 +20,7 @@
 
         let element2 = li.getElementsByTagName('img')[0];
         element2.addEventListener('click', (e) => {
-            let way2=`${window.location.pathname} + /../../html/hero.html#id=${e.target.id}`;
+            let way2=`${window.location.pathname} + /../../Superhero-Hunter/html/hero.html#id=${e.target.id}`;
             let a = document.createElement('a');
             a.target = '_blank';
             a.href = way2;
