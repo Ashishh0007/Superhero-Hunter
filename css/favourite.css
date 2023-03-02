@@ -1,7 +1,6 @@
 /* navbar heading */
 #head {
-    font-size: 25px;
-    font-size: max(10px, 1.6vw);
+    font-size: max(11px, 1.6vw);
     font-family: cursive;
     font-weight: 700;
     transition:0.5s all ease-in-out ;
