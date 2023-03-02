@@ -10,7 +10,7 @@
 
         let element1 = div1.getElementsByTagName('img')[0];
         element1.addEventListener('click', (e) => {
-            let way1=`${window.location.pathname} + /../../Superhero-Hunter/html/hero.html#id=${e.target.id}`;
+            let way1=`${window.location.pathname} + /../../html/hero.html#id=${e.target.id}`;
             let a = document.createElement('a');
             a.target = '_blank';
             a.href = way1;
